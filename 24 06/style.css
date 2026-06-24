@@ -4,7 +4,7 @@ body{
 
 }
 
-h1, p , figcaption{
+h1, p , figcaption, a{
     color: rgb(255, 255, 255);
 }
 
