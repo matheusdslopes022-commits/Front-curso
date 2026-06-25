@@ -6,9 +6,16 @@ p{
 
 a{
     background-color: blue;
-    color:aliceblue
+    color:aliceblue;
+    text-decoration: none;
 }
 
 a:hover{
     background-color: red;
+    font-size: 21px;
+}
+
+span{
+    font-weight: bolder;
+    background-color: blue;
 }
