@@ -1,9 +1,14 @@
 p{
     background-color: rgb(0, 0, 0);
-    color:aliceblue
+    color:aliceblue;
+    display: inline-block;
 }
 
 a{
     background-color: blue;
     color:aliceblue
+}
+
+a:hover{
+    background-color: red;
 }
