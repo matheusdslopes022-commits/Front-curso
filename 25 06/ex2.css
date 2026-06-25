@@ -1,5 +1,16 @@
+body{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
 p{
-    background-color: aqua;
+    background-color: rgb(96, 175, 255);
     width: 500px;
     height: 70px;
+}
+
+img{
+    width: 66vh;
+    height: 70vh;
 }
