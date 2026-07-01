@@ -1,0 +1,27 @@
+td, th{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    background-color: yellow;
+}
+
+td{
+    background-color: rgb(0, 115, 255);
+
+}
+
+td:nth-child(even){
+    background-color: green;
+
+}
+
+td:hover{
+    background-color: black;
+}
