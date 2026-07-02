@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+
+    grid-template-columns: 200px 420px 300px;
+    background-color: lightyellow;
+    gap: 10px
+}
+
+.header {
+    grid-area: header;
+    height: 140px;
+    background-color: darkred;
+    position: relative;
+}
+
+.header h1{
+    color: lightyellow;
+    font-size: 36px;
+    line-height: 140px;
+    float: left;
+    left: 60px;
+    position: relative;
+}
+
+.header img {
+    float: left;
+    margin-top: 22px;
+    margin-left: 10px;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightyellow;
+    background-color: darkgreen;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: darkslategrey;
+}
+
+.main{
+    grid-area: main;
+    width: 420px;
+}
+
+.main p{
+    margin-top: 20px;
+}
+
+.aside{
+    grid-area: aside;
+    width: 300px;
+}
+
+.aside h1{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aside h2{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aside p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aside img{
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.footer{
+    grid-area: footer;
+    height: 72px;
+    background-color: darkred;
+    position: relative;
+}
+
+.footer-inner {
+    width: 500px;
+    position: relative;
+    left: 230px;
+}
+
+.footer p {
+    color: lightyellow;
+    line-height: 72px;
+    padding-left: 20px;
+    text-align: right;
+}
+
+.footer img{
+    float: left;
+    margin-top: 4px;
+}
