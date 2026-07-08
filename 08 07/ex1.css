@@ -9,8 +9,8 @@
     background-color: lightgrey;
     display: flex;
     flex-direction: row-reverse;
-    
-}
+    text-align: center;
+}   
 
 div div{
     width: 250px;
