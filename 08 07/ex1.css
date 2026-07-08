@@ -5,20 +5,26 @@
 
 
 .container{
-    width: 600px;
+    width: 300px;
     background-color: lightgrey;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
     text-align: center;
 }   
 
 div div{
-    width: 250px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 #div1{
     background-color: red;
 }
+
 
 #div2{
     background-color: green;
