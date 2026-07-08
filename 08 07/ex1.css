@@ -5,7 +5,7 @@
 
 
 .container{
-    width: 300px;
+    width: 400px;
     background-color: lightgrey;
     display: flex;
     flex-direction: row ;
@@ -13,6 +13,8 @@
     justify-content: space-around;
     padding: 5px;
     text-align: center;
+    height: 400px;
+    align-items: stretch;
 }   
 
 div div{
