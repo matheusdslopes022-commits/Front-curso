@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="time"] {
+    max-width: 2204px;
+}
+
+input[type="color"] {
+    width: 1000px;
+    height: 40px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #f9f9f9;   
+    justify-content: center;
+    
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.formulario h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.preferencia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    gap: 10px;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 7px 0;
+}
+
+.informacoes h3 {
+    width: 250px;
+    margin: 0;
+}
+
+.informacoes input {
+    max-width: 224px;
+}
+
+.website{
+    padding-bottom: 10px;
+}
+
+
+.website input {
+    width: 100%;
+    
+}
+
+.arquivos input[type="file"] {
+    width: auto;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+#enviar,
+#limpar {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#enviar {
+    background-color: #4caf50;
+}
+
+#limpar {
+    background-color: #f44336;
+}
+
+#enviar:hover,
+#limpar:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: italic;
+    padding: 15px;
+    margin-top: 20px;
+    position: relative;
+    
+}

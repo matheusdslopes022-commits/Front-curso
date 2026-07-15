@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Campos de formulário HTML</h1>
+        <div class="formulario">
+            <h2>Informações Pessoais</h2>
+            <hr>
+            <form>
+                <h3>Nome:</h3>
+                <input type="text" placeholder="Digite seu Nome" required>
+                <h3>Email:</h3>
+                <input type="email" placeholder="exemplo@dominio.com" required>
+                <h3>Senha:</h3>
+                <input type="password" required>
+                <h3>Mensagem:</h3>
+                <textarea placeholder="Digite sua mensagem" rows="5"></textarea>
+
+
+                <h2>Preferências</h2>
+                <hr>
+                <h3>Escolaridade:</h3>
+                <div class="preferencia">
+                    <input type="radio" id="fundamental" name="escolaridade" value="Fundamental">
+                    <label for="fundamental">Fundamental</label><br>
+
+                    <input type="radio" id="medio" name="escolaridade" value="Médio">
+                    <label for="medio">Médio</label><br>
+
+                    <input type="radio" id="graduacao" name="escolaridade" value="Graduação">
+                    <label for="graduacao">Graduação</label><br>
+
+                    <input type="radio" id="pos" name="escolaridade" value="Pós-Graduação">
+                    <label for="pos">Pós-Graduação</label>
+                </div>
+
+                <h3>Interesses:</h3>
+                <div class="preferencia">
+                    <input type="checkbox" id="musica" name="interesse" value="Musica">
+                    <label for="musica">Musica</label><br>
+
+                    <input type="checkbox" id="Esporte" name="interesse" value="Esporte">
+                    <label for="Esporte">Esporte</label><br>
+
+                    <input type="checkbox" id="Games" name="interesse" value="Games">
+                    <label for="Games">Games</label><br>
+
+                    <input type="checkbox" id="Viagem" name="interesse" value="Viagem">
+                    <label for="Viagem">Viagem</label>
+                </div>
+
+                <h3>Cidade:</h3>
+                <div class="cidade">
+                    <select name="cidade">
+                        <option value="">Selecione Sua cidade</option>
+                        <option value="solteiro">Charqueadas</option>
+                        <option value="casado">São Jeronimo</option>
+                        <option value="divorciado">Porto Alegre</option>
+                        <option value="viuvo">General camara</option>
+                    </select>
+                </div>
+
+
+                <h2>Informações adicionais</h2>
+                <hr>
+                <div class="informacoesadd">
+                    <div class="informacoes">
+                        <h3>Idade(Entre 0 e 120):</h3>
+                        <input type="number" min="0" max="120">
+                    </div>
+
+                    <div class="informacoes">
+                        <h3>Telefone:</h3>
+                        <input type="tel" placeholder="(51)99999-9999" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+                    </div>
+
+                    <div class="website">
+                        <h3>Website:</h3>
+                        <input type="url" placeholder="https://www.seusite.com">
+                    </div>
+
+                    <div class="informacoes">
+                        <h3>Data de Nascimento:</h3>
+                        <input type="date">
+                    </div>
+
+                    <div class="informacoes">
+                        <h3>Horario Preferido para contato:</h3>
+                        <input type="time">
+                    </div>
+
+                    <div class="informacoes">
+                        <h3>Cor favorita:</h3>
+                        <input type="color">
+                    </div>
+
+
+                </div>
+
+                <h2>Envio de arquivos</h2>
+                <hr>
+                <div class="arquivos">
+                    <h3>Anexar Arquivo (PDF ou DOCX):</h3>
+                    <input type="file" accept=".pdf, .doc, .docx">
+
+                    <h3>Envie Suas fotos:</h3>
+                    <input type="file" accept="image/*" multiple>
+                </div>
+
+                <div class="buttons">
+                    <button id="enviar" type="submit">Enviar</button>
+                    <button id="limpar" type="reset">Limpar</button>
+                </div>
+            </form>
+
+
+        </div>
+        
+    </div>
+
+    <footer>
+        Formulário HTML - Desenvolvimento Front-end
+    </footer>
+        
+</body>
+
+</html>
