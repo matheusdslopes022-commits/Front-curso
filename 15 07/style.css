@@ -1,0 +1,9 @@
+.container{
+    p{
+        width: 20%;
+        background-color: blue;
+        &:hover{
+            background-color: red;
+        }
+    }
+}
