@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 15% auto 10%;
+    grid-template-areas:
+        "header header header header header header"
+        "nav main main main main aside"
+        "footer footer footer footer footer footer";
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(78, 61, 171);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    color: white;
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav li {
+    background-color: lightblue;
+    border-bottom: 1px solid white;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.2s ease;
+}
+
+
+.nav li:hover {
+    background-color: deepskyblue;
+}
+
+.nav li:hover a {
+    color: white;
+}
+
+.main {
+    grid-area: main;
+    padding: 10px;
+}
+
+.main p {
+    text-align: justify;
+    margin: 10px 10px 10px 0px;
+}
+
+.main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: rgb(255, 235, 235);
+    padding: 10px;
+    border: 3px solid darkred;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 932px) and (orientation: portrait) {
+    body {
+        grid-template-rows: 10% auto auto auto 5%;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "main main main main main main"
+            "aside aside aside aside aside aside"
+            "footer footer footer footer footer footer";
+    }
+}
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    body {
+        grid-template-rows: 15% auto auto auto 10%;
+        grid-template-areas:
+            "header header header header header header"
+            "nav nav nav nav nav nav"
+            "main main main main main main"
+            "aside aside aside aside aside aside"
+            "footer footer footer footer footer footer";
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+    }
+
+    .nav li {
+        flex: 1;
+        border-bottom: none;
+        
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        grid-template-rows: 8% auto 5%;
+    }
+}

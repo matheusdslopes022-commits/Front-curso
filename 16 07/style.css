@@ -1,3 +1,14 @@
-@media only screen and{
-    
+body{
+    text-align: center;
+    color: brown;
+    background-color: burlywood;
 }
+
+@media only screen and (max-width: 600px){
+
+    body{
+        background-color: lightblue;
+        color: rgb(64, 0, 64);
+    }
+}
+
