@@ -1,86 +1,86 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
+    font-family: 'Segoe UI', 'sans-serif';
     display: grid;
-    grid-template-areas:
-        "horario"
-        "header"
-        "menu"
-        "banner"
-        "main"
-        "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 25px 78px 30px auto auto auto;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
+
+
+    grid-template-areas: "topo"
+                         "header"
+                         "nav"
+                         "banner"
+                         "main"
+                         "footer";
+    grid-template-rows: auto auto auto auto 1fr auto;
 }
 
-.horario{
-    grid-area: horario;
+.topo {
+    grid-area: topo;
     background-color: #ccc;
-    color: #333;
-    display: flex;       
-    align-items: center; 
-    padding-left: 15px;
-    font-size: 13px;
-    color:#008454;
+    height: 25px;
+    display: flex;  
+    color: green; 
+    text-align: left;
+    padding-left: 60px;
 }
 
 .header{
     grid-area: header;
     background-color: white;
-    display: flex;       
-    align-items: center;
-    padding-left: 15px;
+    height: 78px;
 }
 
 .header img{
     height: 75px;
-    width: auto; 
-    display: block;
 }
 
-.menu{
-    grid-area: menu;
+.nav {
+    grid-area: nav;
     background-color: #008454;
+    height: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
-.menu ul{
+.nav ul {
     display: flex;
-    list-style: none;
+    list-style-type: none;
+    width: 100%;               
+    justify-content: space-around;
     height: 100%;
+    padding: 0 40px;          
 }
 
-.menu ul li{
+.nav li {
     height: 100%;
-}
-
-.menu ul li a{
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    height: 100%;
+}
+
+.nav a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 13px;
     text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
 }
 
-.menu ul li a:hover{
+.nav a:hover {
     background-color: #1b1b1b;
 }
 
 .banner{
     grid-area: banner;
-    background-color: #f5f5f5;
 }
 
 .banner img{
@@ -88,16 +88,102 @@ body{
     height: auto;
 }
 
-.main{
+.main {
     grid-area: main;
-    background-color: #fff;
-    background-image: url(imagens/menu\ 16.11.02.png);
+    display: grid;
+    background-image: url('imagens/fundo.png');
+   
+    
+
+    grid-template-columns: 1.4fr 1fr 1fr;
+    grid-template-areas: 
+        "revista cartao    cartao"
+        "revista trabalhe  atendimento";
+        
+    gap: 15px;
+    padding: 40px 60px;
+}
+
+
+.revista     { grid-area: revista; }
+.cartao      { grid-area: cartao; }
+.trabalhe    { grid-area: trabalhe; }
+.atendimento { grid-area: atendimento; }
+
+
+.revista, .cartao, .trabalhe, .atendimento {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.main h3 {
+    color: #00563b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* --- ESTILOS ESPECÍFICOS DE CADA CARD --- */
+
+/* Revista */
+.revista {
+    align-items: center;
+    gap: 20px;
+}
+
+.revista img {
+    width: 45%;
+    max-width: 180px;
+    height: auto;
+}
+
+.revista div {
+    width: 55%;
+}
+
+.revista p {
+    color: #00563b;
+    font-size: 0.82rem;
+    line-height: 1.3;
+}
+
+/* Cartão */
+.cartao {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.cartao img {
+    max-height: 90px;
+    width: auto;
+}
+
+/* Trabalhe Conosco e Atendimento */
+.trabalhe, .atendimento {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.trabalhe img, .atendimento img {
+    width: 65px;
+    height: auto;
+    margin-top: 15px;
 }
 
 .footer{
     grid-area: footer;
     background-color: black;
-    color: white;
-    padding: 15px;
+    height: 36px;
     text-align: center;
+    color: white;
+    padding: 10px;
 }
