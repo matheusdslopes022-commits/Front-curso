@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    Font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, 300px, auto, auto, auto;
+    grid-template-areas: "header"
+        "banner"
+        "main"
+        "cadastro"
+        "footer";
+
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #c1b2a4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header #barra-vermelha {
+    flex: 1;
+    height: 40px;
+    background-color: red;
+}
+
+.header img {
+    flex: 1;
+    width: 100px;
+}
+
+.nav {
+    flex: 10;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #228b22;
+}
+
+.nav li {
+    list-style: none;
+    flex: 1;
+    Text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+}
+
+.nav a:hover {
+    background-color: #1F6721;
+}
+
+.banner {
+    grid-area: banner;
+    background-image: url(imagens/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 350px
+}
+
+.main {
+    grid-area: main;
+    background-color: white;
+}
+
+.main h1 {
+    Text-align: left;
+    Padding-left: 30px;
+    Padding-top: 10px;
+    Font-size: 30px;
+    color: #1DB32F;
+}
+
+.main p {
+    Text-align: left;
+    Padding-left: 30px;
+    Padding-top: 10px;
+    color: #333;
+    Font-size: 18px;
+}
+
+.main section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    box-sizing: 5px;
+}
+
+#cards {
+    Display: flex;
+    Justify-content: space-evenly;
+    Padding: 30px;
+    Gap: 30px;
+}
+
+#cards div {
+    background-color: white;
+    Flex: 1;
+    Text-align: center;
+    Box-shadow: 5px 0px 40px rgba(0, 0, 0, .3);
+}
+
+#cards div img {
+    width: 109px;
+    height: 150px;
+    padding: 10px;
+}
+
+#cards div h5 {
+    background-color: #E50808;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+.cadastro {
+    grid-area: cadastro;
+    background-image: url(imagens/fundo-cadastro.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.cadastro h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.cadastro form {
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.cadastro form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#nome,
+#email,
+#telefone {
+    margin-bottom: 15px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#receberemail,
+#recebersms {
+    Float: left;
+    margin-right: 10px;
+}
+
+.button{
+    background-color: #1DB32F;
+    color:white;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.footer{
+    grid-area: footer;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: black;
+}
+
+.whats{
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.whats img{
+    width: 80px;
+    height: 80px;
+}
