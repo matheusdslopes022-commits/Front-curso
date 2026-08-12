@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let ano = Number(prompt("Digite o ano do veículo:"));
+    let tabela = Number(prompt("Digite o valor da tabela do veículo:"));
+    let taxa;
+
+    if (ano <= 1990) {
+        taxa = tabela * 0.01; 
+    } else {
+        taxa = tabela * 0.015;
+    }
+
+    document.writeln("A taxa ficou: R$ " + taxa.toFixed(2) + "<br>");
+</script>
+
+<body>
+
+</body>
+
+</html>

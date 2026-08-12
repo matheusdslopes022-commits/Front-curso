@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let anoNascimento = Number(prompt("Digite a dara de nascimento"));
+    let anoAtual = Number(prompt("Digite o ano atual"));
+
+    if(anoAtual > 2026 || anoNascimento > anoAtual){
+        document.writeln("Data errada");
+    } else {
+        document.writeln("Sua idade eh " + (anoAtual - anoNascimento));
+    }
+</script>
+<body>
+    
+</body>
+</html>
