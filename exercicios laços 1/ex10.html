@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let alunos = Number(prompt("Digite o numero de alunos"));
+    let maior = 0;
+    let menor = 101;
+
+    for (i = 0; i < alunos; i++) {
+
+        let nota1 = Number(prompt("Digite a nota 1"));
+        let nota2 = Number(prompt("Digite a nota 2"));
+
+        
+
+        let media = (nota1 + nota2) / 2;
+
+        document.writeln("A media do aluno " + i + " eh: " + media + "<br>");
+
+        if (media < 6) {
+            document.write("Aluno reprovado<br>");
+        } else {
+            document.write("Aluno aprovado<br>");
+        }
+
+        if (media > maior) {
+            maior = media
+        }
+         if (media < menor) {
+            menor = media;
+        }
+
+    }
+
+    document.write("A menor media eh: " + menor + "<br>");
+    document.write("A maior media eh: " + maior + "<br>");
+
+    
+</script>
+
+<body>
+
+</body>
+
+</html>
