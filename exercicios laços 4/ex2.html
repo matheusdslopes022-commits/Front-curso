@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    let golsinter;
+    let golsgremio;
+    let opcao;
+    let quantidadegrenal = 0;
+    let vitoriagremio = 0;
+    let vitoriainter = 0;
+    let empate = 0;
+    do {
+        do {
+            golsinter = Number(prompt("Numero de gols do inter: "));
+            golsgremio = Number(prompt("Numero de gols do gremio: "));
+        } while (golsgremio <= 0 || golsinter <= 0);
+        quantidadegrenal++;
+
+        if(golsinter > golsgremio){
+            vitoriainter++;
+        } else if(golsgremio > golsinter){
+            vitoriagremio++;
+        } else {
+            empate++;
+        }
+        opcao = Number(prompt("Voce deseja continuar - 0 encerra"))
+    }while(opcao != 0)
+
+    document.writeln("Quantidade de empates: "+ empate);
+
+</script>
+
+<body>
+
+</body>
+
+</html>

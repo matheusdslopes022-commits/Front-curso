@@ -1,0 +1,39 @@
+<script>
+    let confirmados = Number(prompt("Digite o numero de confirmados:"));
+    let maior70 = false;
+    let maioridade = 0;
+    let menoridade = 0;
+    let maisnovo = 100;
+    let nomemaisnovo;
+
+    for (let i = 0; i < confirmados; i++) {
+        let nome = prompt("Digite o nome");
+        let idade = Number(prompt("Digite a idade"));
+
+        if(idade > 70){
+            maior70 = true;
+        }
+
+        if(idade >= 18){
+            maioridade++;
+        } else {
+            menoridade++;
+        }
+
+        if(idade < maisnovo){
+            maisnovo = idade;
+            nomemaisnovo = nome
+        }
+    }
+
+    if(maior70 == true){
+        document.writeln("Tem alguem maior que 70 anos <br>");
+    } else {
+        document.writeln("Não tem alguem maior que 70 anos <br>");
+    }
+    
+    document.writeln("A quantidade de maiores de idade: " + maioridade+ "<br>");
+    document.writeln("A quantidade de menores de idade: " + menoridade+ "<br>");
+    document.writeln("Nome da pessoa mais nova: " + nomemaisnovo+ " tem "+maisnovo+"<br>");
+
+</script>

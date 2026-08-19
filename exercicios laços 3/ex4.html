@@ -1,0 +1,27 @@
+<script>
+    let quantidade = Number(prompt("Digite a quantidade atendida:"));
+    let distancia;
+    let maiordistancia = 0;
+    let ideais = 0;
+    let nomemaior;
+
+    for(let i = 0; i < quantidade; i++){
+        let nome = prompt("Digite o nome: ");
+        let pesoatual = parseFloat(prompt("Digite o peso atual:"));
+        let pesoideal = parseFloat(prompt("Digite o peso ideal:"));
+
+        distancia = pesoatual - pesoideal;
+        if(distancia > maiordistancia){
+            maiordistancia = distancia;
+            nomemaior = nome;
+        }
+
+        if(pesoatual === pesoideal){
+            ideais++;
+        }
+    }
+
+
+    document.writeln("O " + nomemaior + " é o que esta mais distante do peso ideal <br>");
+    document.writeln("Quantidade peso ideal: "+ ideais);
+</script>

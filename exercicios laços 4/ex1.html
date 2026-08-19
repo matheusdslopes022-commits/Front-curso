@@ -1,0 +1,26 @@
+<script>
+    let nome;
+    let opcao;
+
+    do {
+        nome = prompt("Digite seu nome:");
+        let nota1, nota2;
+
+        do {
+            nota1 = parseFloat(prompt("Digite a nota 1 (entre 0 e 10):"));
+            nota2 = parseFloat(prompt("Digite a nota 2 (entre 0 e 10):"));
+
+            if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
+                alert("Digite notas entre 0 e 10!");
+            }
+        } while (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10);
+
+        let media = (nota1 + nota2) / 2;
+
+        document.writeln("Nome: " + nome + "<br>");
+        document.writeln("Média: " + media + "<br>");
+
+        opcao = prompt("Você deseja continuar? (Digite 0 para sair ou qualquer outra tecla para continuar)");
+        
+    } while (opcao != "0");
+</script>
