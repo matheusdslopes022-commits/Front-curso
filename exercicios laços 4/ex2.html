@@ -15,11 +15,12 @@
     let vitoriagremio = 0;
     let vitoriainter = 0;
     let empate = 0;
+
     do {
         do {
             golsinter = Number(prompt("Numero de gols do inter: "));
             golsgremio = Number(prompt("Numero de gols do gremio: "));
-        } while (golsgremio <= 0 || golsinter <= 0);
+        } while (golsgremio < 0 || golsinter < 0);
         quantidadegrenal++;
 
         if(golsinter > golsgremio){
@@ -32,7 +33,18 @@
         opcao = Number(prompt("Voce deseja continuar - 0 encerra"))
     }while(opcao != 0)
 
-    document.writeln("Quantidade de empates: "+ empate);
+    document.writeln("Quantidade de Grenais totais: "+quantidadegrenal+"<br>");
+    document.writeln("Quantidade de empates: "+ empate + "<br>");
+    document.writeln("Quantidade de vitorias do gremio: " + vitoriagremio + "<br>");
+    document.writeln("Quantidade de vitorias do inter: " + vitoriainter + "<br>");
+
+    if(vitoriagremio > vitoriainter){
+        document.writeln("O gremio ganhou mais grenais");
+    } else if (vitoriainter > vitoriagremio){
+        document.writeln("O inter ganhou mais grenais");
+    } else {
+        document.writeln("Empate em numeros de vitorias")
+    }
 
 </script>
 

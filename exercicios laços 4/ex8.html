@@ -1,0 +1,20 @@
+<script>
+    let competidores = Number(prompt("Digite a quantidade de competiores"));
+    let maior = 0;
+    let competirdor;
+
+
+    for(let i = 0; i < competidores; i++){
+        let arremossos;
+        for(let j = 0; j < 3; j++){
+            arremossos = Number(prompt("Digite o arremesso "+ (j + 1) + " do competidor " + (i + 1)));
+            
+            if(arremossos > maior){
+                maior = arremossos;
+                competirdor = (i + 1);
+            }
+        }
+    }
+
+    document.writeln("O maior arremesso foi do competidor "+ competirdor+ " foi " + maior);
+</script>

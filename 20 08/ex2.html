@@ -1,0 +1,16 @@
+<script>
+    let numero = parseInt(prompt("Digite um numero"));
+    let divisores = 0;
+
+    for(let i = 1; i < numero;i++){
+        if(numero % i == 0){
+            divisores += i;
+        }
+    }
+
+    if(divisores === numero){
+        document.writeln("Este numero é um numero perfeito")
+    } else {
+        document.writeln("Este numero não é um numero perfeito")
+    }
+</script>

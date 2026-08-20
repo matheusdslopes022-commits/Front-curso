@@ -1,0 +1,23 @@
+<script>
+    let periodo = Number(prompt("Digite o periodo de analise em meses:"));
+    let numeroprodutos = Number(prompt("Digite o numero de produtos diferentes que a loja comercializa"));
+    let produtoqtd = 1;
+
+
+    do{
+        let unidades;
+        let soma = 0;
+        for(let i = 0; i < periodo; i++){
+            unidades = Number(prompt("Mes " + (i + 1)+ ": "));
+            document.writeln("Mes " + (i + 1)+ ": " + unidades + "<br>")
+            soma += unidades;
+        }
+        
+        document.writeln("Total: " + soma + "<br>");
+        document.writeln("<br>");
+
+        produtoqtd++;
+    } while (produtoqtd < numeroprodutos)
+
+
+</script>

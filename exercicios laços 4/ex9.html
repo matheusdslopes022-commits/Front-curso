@@ -1,0 +1,30 @@
+<script>
+    let competidores = Number(prompt("Digite a quantidade de competiores"));
+    let maior = 0;
+    let competirdor;
+    let maiormedia = 0;
+    let competidormaiormedia;
+
+    for(let i = 0; i < competidores; i++){
+        let arremossos;
+        let soma = 0;
+        for(let j = 0; j < 3; j++){
+            arremossos = Number(prompt("Digite o arremesso "+ (j + 1) + " do competidor " + (i + 1)));
+            
+            if(arremossos > maior){
+                maior = arremossos;
+                competirdor = (i + 1);
+            }
+            soma += arremossos;
+
+            if(soma > maiormedia){
+                maiormedia = soma;
+                competidormaiormedia = (i + 1);
+            }
+        }
+
+    }
+
+    document.writeln("O maior arremesso foi do competidor "+ competirdor+ " foi " + maior +"<br>");
+    document.writeln("O mais constante foi " + competidormaiormedia + " com media de " + maiormedia)
+</script>

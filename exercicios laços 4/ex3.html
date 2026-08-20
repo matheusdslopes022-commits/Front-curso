@@ -1,0 +1,30 @@
+<script>
+    let tipocombustivel;
+    let alcool = 0;
+    let gasolina = 0;
+    let diesel = 0;
+
+
+    do {
+        tipocombustivel = parseInt(prompt("1.Álcool  2.Gasolina  3.Diesel  4.Fim"));
+
+        if (tipocombustivel === 1) {
+            alcool++;
+        } else if (tipocombustivel === 2) {
+            gasolina++;
+        } else if (tipocombustivel === 3) {
+            diesel++;
+        } else if (tipocombustivel !== 4) {
+            alert("Código inválido! Digite novamente.");
+        }
+    } while (tipocombustivel !== 4);
+
+
+    document.write(
+    "<h2>MUITO OBRIGADO!</h2>" +
+    "Álcool: " + alcool + "<br>" +
+    "Gasolina: " + gasolina + "<br>" +
+    "Diesel: " + diesel
+);
+
+</script>

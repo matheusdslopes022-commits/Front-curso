@@ -1,0 +1,30 @@
+<script>
+    let notas;
+    let mediaaprovados = 0;
+    let aprovados = 0;
+    let mediareprovados = 0;
+    let reprovados = 0;
+
+    for(let i = 0; i < 10; i++){
+        notas = Number(prompt("Digite nota"));
+
+        if(notas >= 6){
+            aprovados++;
+            mediaaprovados += notas;
+        } else {
+            reprovados++;
+            mediareprovados += notas;
+        }
+    }
+
+    mediaaprovados = mediaaprovados / aprovados;
+    mediareprovados = mediareprovados / reprovados;
+
+
+    document.writeln("A media dos aprovados foi " + mediaaprovados + "<br>");
+    document.writeln("A media dos reprovados foi " + mediareprovados + "<br>");
+    document.writeln("A quantida de aprovados foi " + aprovados + "<br>");
+    document.writeln("A quantida de reprovados foi " + reprovados);
+
+re
+re</script>
