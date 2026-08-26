@@ -1,0 +1,22 @@
+<script>
+    let C = [];
+
+    for(let i = 0; i < 10; i++){
+        let c = Number(prompt("Digite um numero: "));
+        C.push(c);
+        
+    }
+
+
+    document.writeln(C + " ");
+    document.writeln("<br>");
+
+    for(let i = 0; i < 10; i++){
+        if(C[i] < 0){
+            C[i] = 0;
+        }
+    }
+
+    document.writeln(C + " ");
+
+</script>

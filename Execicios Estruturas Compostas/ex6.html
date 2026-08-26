@@ -1,0 +1,18 @@
+<script>
+    let B = [];
+
+    for(let i = 0; i < 10; i++){
+        let b = Number(prompt("Digite um numero"));
+
+        B.push(b);
+    }
+
+    let x = Number(prompt("Digite um numero para verificar:"));
+
+    for(let i = 0; i < 10; i++){
+        if(x === B[i]){
+            document.writeln("O numero "+ x + " aparece na posição "+ (i + 1));
+        }
+    }
+
+</script>

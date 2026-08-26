@@ -1,0 +1,21 @@
+<script>
+    let alturas = [];
+    let soma = 0;
+
+
+    for(let i = 0; i < 4; i++){
+        let altura = Number(prompt("Digite a altura: "));
+        alturas.push(altura);
+
+        soma += altura;
+
+    }   
+
+    let media = soma / 4;
+
+    document.writeln("A media eh " + media + "<br>")
+    for(let i = 0; i < 4; i++){
+        let diferença =  Math.abs(media - alturas[i]);
+        document.writeln("A diferença entre a altura do "+ (i + 1) + " e a media eh " + diferença + "<br>");
+    }
+</script>

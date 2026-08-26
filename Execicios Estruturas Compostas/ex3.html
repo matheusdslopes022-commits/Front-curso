@@ -1,0 +1,26 @@
+<script>
+    let notas = [];
+    let soma = 0;
+    let media;
+    let acima = 0;
+
+
+    for(let i = 0; i < 10; i++){
+        let nota = Number(prompt("Digite a nota do aluno " + (i + 1) + ":"));
+        notas.push(nota);
+
+        if(nota >= 6){
+            acima++;
+        }
+    }
+
+    for(let i = 0; i < 10; i++){
+        soma += notas[i];
+    }
+
+    media = soma / 10;
+
+    document.writeln("A media da turma eh: " + media + "<br>");
+    document.writeln("A quantidade de alunos acima da media eh: " + acima + "<br>");
+
+</script>

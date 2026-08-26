@@ -1,0 +1,14 @@
+<script>
+    let alunos = [];
+
+    for(let i = 0; i < 5; i++){
+        let nome = prompt("Digite o nome do aluno:");
+        alunos.push(nome)
+
+        for(let j = 0; j < 4;j++){
+            let nota = Number(prompt("Digite a nota "+ (j + 1) + ":"));
+            alunos.push(nota);
+        }
+        
+    }
+</script>
