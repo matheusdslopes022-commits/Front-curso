@@ -1,0 +1,23 @@
+<script>
+    let vetor = [];
+    let soma = 0;
+
+    for (let i = 0; i < 10; i++) {
+        let a = Number(prompt("Digite um número"));
+
+        if (a <= 0) {
+            break;
+        }
+
+        vetor.push(a);
+    }
+
+
+    for(let i = 0; i < 10; i++){
+        if(vetor[i] > 5){
+            soma += vetor[i];
+        }
+    }
+
+    document.writeln("A soma dos valores maiores que 5 eh " + soma);
+</script>

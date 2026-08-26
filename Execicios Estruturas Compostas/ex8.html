@@ -1,0 +1,22 @@
+<script>
+    let Q = [];
+    let maior = 0;
+    let posicao;
+
+    for (let i = 0; i < 10; i++) {
+        let q;
+        do {
+            q = Number(prompt("Digite um numero"));
+        } while (q < 1);
+        Q.push(q);
+
+        
+
+        if (q > maior) {
+            maior = q;
+            posicao = i;
+        }
+    }
+
+    document.writeln("O maior valor eh " + maior + " na posicao " + posicao);
+</script>
