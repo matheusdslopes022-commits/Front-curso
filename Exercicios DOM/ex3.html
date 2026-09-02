@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Estudar JavaScript</li>
+        <li>Fazer exercicios</li>
+        <li>Revisar conteudo</li>
+    </ul>
+</body>
+
+<script>
+    let lista = document.getElementById("lista");
+    lista.style.listStyleType = "square";
+    let li = document.createElement("li");
+
+    li.textContent = "Praticar manipulação do DOM";
+
+    lista.append(li);
+
+    let li2 = document.createElement("li");
+    li2.textContent = "Revisar os exemplos da aula";
+    lista.prepend(li2);
+
+    
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">Minha pagina</h1>
+
+    <p name="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolor veniam quaerat. Soluta
+        consectetur sint assumenda at ducimus quo exercitationem perferendis, impedit eius, ut libero voluptas suscipit!
+        Quo, velit quidem.</p>
+    <p name="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolor veniam quaerat. Soluta
+        consectetur sint assumenda at ducimus quo exercitationem perferendis, impedit eius, ut libero voluptas suscipit!
+        Quo, velit quidem.</p>
+    <p name="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolor veniam quaerat. Soluta
+        consectetur sint assumenda at ducimus quo exercitationem perferendis, impedit eius, ut libero voluptas suscipit!
+        Quo, velit quidem.</p>
+</body>
+
+<script>
+    let h1 = document.getElementById("h1");
+    h1.innerText = "Minha primeira pagina interativa";
+    h1.style.color = "blue";
+
+    let p = document.getElementsByName("p");
+    console.log(`Quantidade de parágrafos encontrados: ${p.length}`);
+
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.backgroundColor = "black";
+        p[i].style.color = "green";
+        p[i].style.padding = "10px";
+    }
+
+</script>
+
+</html>

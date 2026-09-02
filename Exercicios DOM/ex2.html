@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .destaque {
+        background-color: yellow;
+    }
+
+    .normal {
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dolorem suscipit ad unde eum
+        quia placeat iusto ex! Omnis pariatur quam corrupti in ducimus consequatur amet placeat ad quod blanditiis!</p>
+    <p class="normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dolorem suscipit ad unde eum
+        quia placeat iusto ex! Omnis pariatur quam corrupti in ducimus consequatur amet placeat ad quod blanditiis!</p>
+    <p class="destaque">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dolorem suscipit ad unde eum
+        quia placeat iusto ex! Omnis pariatur quam corrupti in ducimus consequatur amet placeat ad quod blanditiis!</p>
+    <p class="normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dolorem suscipit ad unde eum
+        quia placeat iusto ex! Omnis pariatur quam corrupti in ducimus consequatur amet placeat ad quod blanditiis!</p>
+    <p class="normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat dolorem suscipit ad unde eum
+        quia placeat iusto ex! Omnis pariatur quam corrupti in ducimus consequatur amet placeat ad quod blanditiis!</p>
+</body>
+
+<script>
+    let normal = document.querySelectorAll(".normal");
+
+    for (let i = 0; i < normal.length; i++) {
+        normal[i].classList.replace("normal", "destaque");
+    }
+
+
+
+</script>
+
+</html>

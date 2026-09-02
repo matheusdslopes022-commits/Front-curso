@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Notebook</li>
+        <li>Teclado</li>
+        <li>Mouse</li>
+        <li>Monitor</li>
+        <li>WebCam</li>
+    </ul>
+</body>
+
+<script>
+    let lista = document.getElementById("lista");
+    let li = document.querySelectorAll("li");
+    for(let i = 0; i < li.length; i++){
+        if(li[i].textContent === "Mouse"){
+            li[i].remove();
+        }
+
+        if(li[i].textContent === "WebCam"){
+            li[i].remove();
+        }
+
+        
+    }
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Área do aluno</h1>
+    <p id="mensagem">Conteúdo disponível em breve.</p>
+</body>
+<script>
+    let h2 = document.createElement("h2");
+    let p = document.getElementById("mensagem");
+
+    h2.textContent = "Bem-vindo ao curso!";
+    p.replaceWith(h2);
+</script>
+</html>
