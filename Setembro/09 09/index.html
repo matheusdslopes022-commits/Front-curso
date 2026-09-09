@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mover Quadrado</title>
+    <style>
+        #quadrado {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="quadrado"></div>
+
+    <script>
+        const quadrado = document.getElementById("quadrado");
+
+        
+        let posX = 50;
+        let posY = 50;
+        const velocidade = 10;
+
+        document.addEventListener("keydown", function(event) {
+           
+            const tecla = event.key.toLowerCase();
+
+
+            if (tecla === "a" || tecla === "arrowleft") {
+                posX -= velocidade;
+            }
+            if (tecla === "d" || tecla === "arrowright") {
+                posX += velocidade;
+            }
+            if (tecla === "w" || tecla === "arrowup") {
+                posY -= velocidade; 
+            }
+            if (tecla === "s" || tecla === "arrowdown") {
+                posY += velocidade; 
+            }
+
+        
+            quadrado.style.left = posX + "px";
+            quadrado.style.top = posY + "px";
+        });
+    </script>
+</body>
+</html>
