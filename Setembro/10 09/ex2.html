@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			height: 200px;
+			background: #dddddd;
+		}
+		.dot {
+			height: 100px; 
+			width: 100px;
+			background: #e6ff56;
+			position: absolute;
+            border: 1px black solid;
+             
+		}
+	</style>
+	<script>
+		addEventListener("click", function(event) {
+            let texto = prompt("Digite um texto");
+			var dot = document.createElement("div");
+			dot.classList.add("dot");
+            let p = document.createElement("p");
+            p.innerText = texto;
+			dot.style.left = (event.pageX - 8)  + "px";
+			dot.style.top = (event.pageY - 8) + "px";
+			
+
+
+            
+            dot.appendChild(p);
+            document.body.appendChild(dot)
+		});
+	</script>
+</head>
+<body>
+</body>
+</html>
