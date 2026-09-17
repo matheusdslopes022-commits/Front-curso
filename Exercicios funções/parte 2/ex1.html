@@ -1,0 +1,18 @@
+<script>
+    let raio = parseFloat(prompt("Digite o raio"));
+
+    function areaCiruculo(raio){
+        let area = Math.PI * (raio * raio);
+        document.writeln("A area eh " + area.toFixed(2)+ "<br>");
+    }
+
+    function compCircunferencia(raio){
+        let comp = 2 * Math.PI * raio;
+        document.writeln("O comprimento da circunferencia eh "+ comp.toFixed(2));
+    }
+
+    areaCiruculo(raio);
+    compCircunferencia(raio);
+    
+
+</script>

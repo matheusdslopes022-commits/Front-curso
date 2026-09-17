@@ -1,0 +1,27 @@
+<script>
+  
+    function somatorio(limite) {
+        let soma = 0;
+        for (let i = 1; i <= limite; i++) {
+            soma += i; 
+        }
+        return soma; 
+    }
+
+    let numeros = [];
+
+    for (let i = 0; i < 10; i++) {
+        let numero = 0;
+
+        while (numero < 1 || isNaN(numero)) {
+            numero = Number(prompt(`Digite o ${i + 1}º número (deve ser maior ou igual a 1):`));
+        }
+
+        numeros.push(numero);
+
+        let resultado = somatorio(numero);
+
+        console.log(`O somatório de 1 até ${numero} é: ${resultado}`);
+    }
+
+</script>
